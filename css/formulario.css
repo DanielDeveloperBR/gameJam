@@ -32,11 +32,14 @@
     background-color: var(--diversos);
     color: white;
 }
-.containerLogin p, .containerLogin a{
+
+.containerLogin p,
+.containerLogin a {
     white-space: nowrap;
     font-size: 0.8em;
 }
-.agendamento{
+
+.agendamento {
     margin-bottom: 0px;
 }
 
@@ -71,14 +74,33 @@
     border-radius: 2em;
 }
 
+.formCadastrar textarea {
+    border-radius: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+    max-width: 100%;
+}
+
 .formCadastro {
     border: 1px solid white;
 }
+
 /* cor dos inputs desativados */
 input.cep-info {
     background-color: #0000002b !important;
     color: white;
 }
+
 .formLogin {
     height: 100%;
 }
@@ -145,7 +167,8 @@ form input:focus::placeholder {
     width: 100%;
     margin: auto;
 }
-input[type="radio"]{
+
+input[type="radio"] {
     margin-left: 10px;
 }
 
@@ -193,18 +216,22 @@ fieldset {
 #formEmpresa {
     margin: 20px auto;
 }
-img#previewCliente, img#previewEmpresa {
+
+img#previewCliente,
+img#previewEmpresa {
     display: none;
     border: 3px solid white;
     height: 5em;
     width: 5em;
     border-radius: 30px;
 }
-img#previewImagemEmpresa{
+
+img#previewImagemEmpresa {
     display: none;
     border: 3px solid white;
     border-radius: 10px;
 }
+
 /* responsividade do login */
 @media all and (max-width: 665px) {
     .imgLogin {

@@ -31,26 +31,16 @@
         <div id="modal">
             <div id="loading-spinner"></div>
          </div>
-        <section class="agendamento">
-            <h1>Criar uma conta</h1>
-            <fieldset>
-                <input type="radio" name="opcao" id="cliente" checked>
-                <label for="cliente">Sou Cliente</label>
-                <input type="radio" name="opcao" id="empresa">
-                <label for="empresa">Sou Empresa</label>
-            </fieldset>
-        </section>
         <div class="containerForm" id="formularios">
             <!-- Cadastrar usuario cliente -->
             <form method="post" class="formCadastro" id="formCliente">
-                <h1>Cadastrar Cliente</h1>
+                <h1>Cadastrar para a Game Jam</h1>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" placeholder="Seu nome completo" required>
 
                 <label for="imagemCliente">Escolha a imagem do seu perfil</label>
                 <!-- Escolher imamgem -->
-                <input type="file" name="imagemPerfil" id="imagemCliente"
-                    accept="image/*" onchange="previewImageCliente('previewCliente')">
+                <input type="file" name="imagemPerfil" id="imagemCliente" accept="image/*" onchange="previewImageCliente('previewCliente')">
                     <!-- Aparecer imagem -->
                 <img id="previewCliente">
 
@@ -60,52 +50,11 @@
                 <input type="password" name="repetirSenha" placeholder="Digite a sua senha novamente">
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="seuemail@exemplo.com">
-                <label for="cep">CEP</label>
-                <input type="number" name="cepCliente" maxlength="8" placeholder="Digite apenas números"
-                    id="cepCliente">
+    
                 <div class="containerNovosElementosCliente" style="text-align: center;"></div>
                 <button type="submit" style="margin-top: 20px;">Enviar</button>
             </form>
 
-
-            <!-- Cadastrar usuario Empresa -->
-            <form method="post" class="formCadastro" id="formEmpresa">
-                <h1>Cadastrar Empresa</h1>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" placeholder="Seu nome completo">
-                <label for="empresa">Nome da Empresa</label>
-
-                <input type="text" name="empresa" placeholder="O nome da sua empresa">
-
-                <label for="categoria">Categoria</label>
-                <input type="text" name="categoria" placeholder="O tipo da sua empresa" id="categoria">
-                <!-- Imagem perfil -->
-                <label for="imagem">Escolha a imagem do seu perfil</label>
-                <input type="file" name="imagemPerfil" placeholder="O nome da sua imagemPerfil" id="imagem" accept="image/*" onchange="previewImage('previewEmpresa')">
-                <!-- Mostrar imagem -->
-                <img id="previewEmpresa">
-
-                <!-- Imagem Empresa -->
-                <label for="imagem">Escolha a imagem da sua Empresa</label>
-                <input type="file" name="imagemEmpresa" id="imagemEmpresa" accept="image/*"  onchange="preveImagem('previewImagemEmpresa')">
-                <!-- Mostrar imagem -->
-                <img id="previewImagemEmpresa">
-
-
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" placeholder="Senha no máximo 10 caracteres">
-                <label for="repetirSenha">Repetir a senha</label>
-                <input type="password" name="repetirSenha" placeholder="Digite a sua novamente">
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="seuemail@exemplo.com">
-                <label for="cnpj">CNPJ</label>
-                <input type="number" name="cnpj" placeholder="seuemail@exemplo.com">
-                <label for="cep">CEP</label>
-                <input type="number" name="cepEmpresa" maxlength="8" placeholder="Digite apenas números"
-                    id="cepEmpresa">
-                <div class="containerNovosElementosEmpresa" style="text-align: center;"></div>
-                <button type="submit" style="margin-top: 20px;">Enviar</button>
-            </form>
         </div>
     </div>
     <footer>
