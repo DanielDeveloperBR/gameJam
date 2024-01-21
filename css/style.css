@@ -142,15 +142,14 @@ img {
 
 /* Principal */
 .container {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     max-width: 100%;
-    opacity: 0;
     flex-direction: column;
     transform: translateY(50px);
+    transform: translateY(0px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -160,15 +159,10 @@ img {
 }
 
 .container h1 {
-    position: relative;
     max-width: 500px;
     letter-spacing: 0em;
     font-size: 4em;
     text-align: center;
-}
-
-.container div>img {
-    position: relative;
 }
 
 .container p {
